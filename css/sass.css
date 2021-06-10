@@ -1,4 +1,749 @@
 body {
-  background-color: red;
+  background: #F9F9F9;
+}
+
+header {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 6px 12px #DDDDDD;
+          box-shadow: 0 6px 12px #DDDDDD;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 17px 32px;
+}
+
+header .navbar .left-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+header .navbar .left-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+header .navbar .left-header ul .list {
+  list-style: none;
+  margin-right: 29px;
+}
+
+header .navbar .left-header ul .list a {
+  color: #000000;
+  outline: 0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header .navbar .left-header ul .list a:hover {
+  color: #EA5607;
+}
+
+header .navbar .left-header ul .list .nav-toggle::after {
+  content: "";
+  display: inline-block;
+  border: solid #000;
+  border-width: 0 1.4px 1.4px 0;
+  padding: 2.5px;
+  margin-left: 0.455em;
+  vertical-align: 0.140em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .navbar .left-header ul .list .nav-toggle:hover::after {
+  border-color: #EA5607;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  vertical-align: 0.09em;
+}
+
+header .navbar .right-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+header .navbar .right-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+header .navbar .right-header ul .list {
+  list-style: none;
+  margin-right: 29px;
+}
+
+header .navbar .right-header ul .list:nth-last-child(1) {
+  margin-right: 0;
+}
+
+header .navbar .right-header ul .list a {
+  color: #000000;
+  outline: 0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header .navbar .right-header ul .list a:hover {
+  color: #EA5607;
+}
+
+header .navbar .right-header ul .list .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EA5607;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  border-radius: 3px;
+}
+
+header .navbar .right-header ul .list .account:hover {
+  background: #e05207;
+  color: #FFFFFF;
+}
+
+header .navbar .right-header ul .list .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F2F2F2;
+  color: #000000;
+  border-radius: 3px;
+  padding: 10px 12px;
+}
+
+header .navbar .right-header ul .list .language img {
+  margin-right: 5px;
+}
+
+header .navbar .right-header ul .list .language:hover {
+  background: #ededed;
+}
+
+header .navbar .right-header ul .list .bell {
+  position: relative;
+}
+
+header .navbar .right-header ul .list .bell img {
+  max-width: 24px;
+}
+
+header .navbar .right-header ul .list .bell::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  background: #EA5607;
+  border: 2px solid #FFFFFF;
+}
+
+.support-section {
+  padding: 40px 32px;
+}
+
+.support-section .container {
+  background: #FFFFFF;
+  padding: 40px 32px;
+}
+
+.support-section .container .no-support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.support-section .container .no-support .left-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.support-section .container .no-support .left-section .tether-image {
+  margin-right: 24px;
+}
+
+.support-section .container .no-support .left-section .tether {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 45px;
+}
+
+.support-section .container .no-support .left-section .tether .tether-title {
+  color: #000000;
+  display: block;
+}
+
+.support-section .container .no-support .left-section .tether .usdt {
+  color: #9B9B9B;
+}
+
+.support-section .container .no-support .left-section .info-message {
+  padding: 11px 30px;
+  color: #6A6A6A;
+  border: solid 1px #F2F2F2;
+  border-radius: 20px;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.support-section .container .no-support .left-section .info-message img {
+  max-width: 20px;
+}
+
+.support-section .container .no-support .right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.support-section .container .no-support .right-section .share {
+  padding: 15px 40px;
+  color: #383838;
+  background: transparent;
+  border: 2px solid #e4e4e4;
+  margin-right: 16px;
+  border-radius: 3px;
+}
+
+.support-section .container .no-support .right-section .share:hover {
+  background: #333333;
+  color: #FFFFFF;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  border: 2px solid #383838;
+}
+
+.support-section .container .no-support .right-section .watch-list {
+  padding: 15px 32px;
+  color: #EA5607;
+  background: transparent;
+  border: 2px solid #EA5607;
+  border-radius: 3px;
+}
+
+.support-section .container .no-support .right-section .watch-list:hover {
+  background: #e05207;
+  color: #FFFFFF;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.graphic-section .left-bar .graphic-table {
+  display: block;
+  background: #FFFFFF;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+.graphic-section .left-bar .graphic-table .data {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.graphic-section .left-bar .graphic-table .data .rise {
+  font-size: 16px;
+  color: #03A66D;
+}
+
+.graphic-section .left-bar .graphic-table .data .rise .percentile {
+  padding-left: 120px;
+}
+
+.graphic-section .left-bar .graphic-table .data .times {
+  font-size: 12px;
+  color: #CBCBCB;
+  margin-left: auto;
+}
+
+.graphic-section .left-bar .graphic-table .data .times span {
+  margin-right: 16px;
+}
+
+.graphic-section .left-bar .graphic-table .data .times span:last-child {
+  margin-right: 0;
+}
+
+.graphic-section .left-bar .graphic-table .data .times span.active {
+  color: #EA5607;
+}
+
+.graphic-section .left-bar .graphic-table .price {
+  padding: 0 30px;
+  margin-top: -7px;
+  margin-bottom: 58px;
+}
+
+.graphic-section .left-bar .graphic-table .price span {
+  font-size: 39px;
+  color: #1A1A1A;
+}
+
+.graphic-section .left-bar .graphic-table .graphic-screen img {
+  width: 100%;
+}
+
+.graphic-section .right-bar {
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+.graphic-section .right-bar .content {
+  background: #fff;
+  padding: 16px;
+}
+
+.graphic-section .right-bar .content .search {
+  position: relative;
+}
+
+.graphic-section .right-bar .content .search input {
+  width: 100%;
+  outline: 0;
+  background: #FCFCFC;
+  border: 1px #707070;
+  padding: 8px 35px;
+}
+
+.graphic-section .right-bar .content .search img {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  cursor: pointer;
+}
+
+.graphic-section .right-bar .content .coin-list .ripple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0;
+}
+
+.graphic-section .right-bar .content .coin-list .ripple .ripple-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.graphic-section .right-bar .content .coin-list .ripple .ripple-detail img {
+  margin-right: 16px;
+}
+
+.graphic-section .right-bar .content .coin-list .ripple .ripple-detail .ripple-title .ripple-text {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .ripple .ripple-detail .ripple-title .xrp {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+.graphic-section .right-bar .content .coin-list .ripple .data {
+  text-align: end;
+}
+
+.graphic-section .right-bar .content .coin-list .ripple .data .price {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .ripple .data .drop {
+  font-size: 14px;
+  color: #F84960;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent .bittorrent-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent .bittorrent-detail img {
+  margin-right: 16px;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent .bittorrent-detail .bittorrent-title .bittorrent-text {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent .bittorrent-detail .bittorrent-title .btt {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent .data {
+  text-align: end;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent .data .price {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent .data .drop {
+  font-size: 14px;
+  color: #F84960;
+}
+
+.graphic-section .right-bar .content .coin-list .bittorrent .data .rise {
+  font-size: 16px;
+  color: #03A66D;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash .bitcoin-cash-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash .bitcoin-cash-detail img {
+  margin-right: 16px;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash .bitcoin-cash-detail .bitcoin-cash-title .bitcoin-cash-text {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash .bitcoin-cash-detail .bitcoin-cash-title .bch {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash .data {
+  text-align: end;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash .data .price {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash .data .drop {
+  font-size: 14px;
+  color: #F84960;
+}
+
+.graphic-section .right-bar .content .coin-list .bitcoin-cash .data .rise {
+  font-size: 16px;
+  color: #03A66D;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum .ethereum-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum .ethereum-detail img {
+  margin-right: 16px;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum .ethereum-detail .ethereum-title .ethereum-text {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum .ethereum-detail .ethereum-title .eth {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum .data {
+  text-align: end;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum .data .price {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum .data .drop {
+  font-size: 14px;
+  color: #F84960;
+}
+
+.graphic-section .right-bar .content .coin-list .ethereum .data .rise {
+  font-size: 16px;
+  color: #03A66D;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte .digibyte-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte .digibyte-detail img {
+  margin-right: 16px;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte .digibyte-detail .digibyte-title .digibyte-text {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte .digibyte-detail .digibyte-title .dgb {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte .data {
+  text-align: end;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte .data .price {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte .data .drop {
+  font-size: 14px;
+  color: #F84960;
+}
+
+.graphic-section .right-bar .content .coin-list .digibyte .data .rise {
+  font-size: 16px;
+  color: #03A66D;
+}
+
+.graphic-section .right-bar .content .coin-list .holo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0;
+}
+
+.graphic-section .right-bar .content .coin-list .holo .holo-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.graphic-section .right-bar .content .coin-list .holo .holo-detail img {
+  margin-right: 16px;
+}
+
+.graphic-section .right-bar .content .coin-list .holo .holo-detail .holo-title .holo-text {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .holo .holo-detail .holo-title .hot {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+.graphic-section .right-bar .content .coin-list .holo .data {
+  text-align: end;
+}
+
+.graphic-section .right-bar .content .coin-list .holo .data .price {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .holo .data .drop {
+  font-size: 14px;
+  color: #F84960;
+}
+
+.graphic-section .right-bar .content .coin-list .holo .data .rise {
+  font-size: 16px;
+  color: #03A66D;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin .litecoin-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin .litecoin-detail img {
+  margin-right: 16px;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin .litecoin-detail .litecoin-title .litecoin-text {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin .litecoin-detail .litecoin-title .ltc {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin .data {
+  text-align: end;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin .data .price {
+  display: block;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin .data .drop {
+  font-size: 14px;
+  color: #F84960;
+}
+
+.graphic-section .right-bar .content .coin-list .litecoin .data .rise {
+  font-size: 16px;
+  color: #03A66D;
 }
 /*# sourceMappingURL=sass.css.map */
