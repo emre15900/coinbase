@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 body {
   background: #F9F9F9;
+  font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -344,6 +346,118 @@ header .navbar .right-header ul .list .bell::before {
 
 .graphic-section .left-bar .graphic-table .graphic-screen img {
   width: 100%;
+}
+
+.graphic-section .left-bar .analytic-data {
+  margin: 0;
+  padding: 0;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FFFFFF;
+  margin: 32px 0;
+  padding: 32px;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .volume {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .volume .volume-hour .volume-title {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #6A6A6A;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .volume .volume-hour .hour {
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: #F2F2F2;
+  padding: 1px 5px;
+  color: #BFBFBF;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .volume .volume-data {
+  font-size: 20px;
+  color: #000000;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .price-change {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .price-change .volume-hour .volume-title {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #6A6A6A;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .price-change .volume-hour .hour {
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: #F2F2F2;
+  padding: 1px 5px;
+  color: #BFBFBF;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .price-change .percentile .volume-data {
+  font-size: 20px;
+  color: #000000;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .price-change .percentile .drop {
+  font-size: 16px;
+  color: #F84960;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .lowest .volume-hour .volume-title {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #6A6A6A;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .lowest .volume-hour .hour {
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: #F2F2F2;
+  padding: 1px 5px;
+  color: #BFBFBF;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .lowest .volume-data {
+  font-size: 20px;
+  color: #000000;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .highest .volume-hour .volume-title {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #6A6A6A;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .highest .volume-hour .hour {
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: #F2F2F2;
+  padding: 1px 5px;
+  color: #BFBFBF;
+}
+
+.graphic-section .left-bar .analytic-data .data-analysis .highest .volume-data {
+  font-size: 20px;
+  color: #000000;
 }
 
 .graphic-section .right-bar {
@@ -745,5 +859,367 @@ header .navbar .right-header ul .list .bell::before {
 .graphic-section .right-bar .content .coin-list .litecoin .data .rise {
   font-size: 16px;
   color: #03A66D;
+}
+
+.content-section .message-box {
+  position: relative;
+}
+
+.content-section .message-box .message-shadow {
+  position: absolute;
+  top: 376px;
+  left: 0;
+}
+
+.content-section .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #EA5607;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.content-section .read-more::after {
+  content: "";
+  display: inline-block;
+  border: solid #EA5607;
+  border-width: 0 1.4px 1.4px 0;
+  padding: 2.5px;
+  margin-left: 0.455em;
+  vertical-align: 0.140em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.content-section .read-more:hover::after {
+  border-color: #EA5607;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  vertical-align: 0.09em;
+}
+
+.content-section .price-statistics {
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+.content-section .price-statistics .statistics-data {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 17px 32px;
+}
+
+.content-section .price-statistics .statistics-data .hood {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.content-section .price-statistics .statistics-data .tether-title {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 9px;
+}
+
+.content-section .price-statistics .statistics-data .tether-data {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.content-section .price-statistics .statistics-data .market-value {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 9px;
+}
+
+.content-section .price-statistics .statistics-data .market-data {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.content-section .price-statistics .statistics-data .min-max {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-section .price-statistics .statistics-data .min-max .minimal-maximum {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 9px;
+  margin-right: 50px;
+}
+
+.content-section .price-statistics .statistics-data .min-max .days {
+  color: #B1B1B1;
+  font-size: 12px;
+  padding: 1px 13px 3px 13px;
+  background: #F2F2F2;
+  border-radius: 2px;
+  max-height: 23px;
+}
+
+.content-section .price-statistics .statistics-data .min-max-value {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.content-section .price-statistics .statistics-data .all-time-hight {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 9px;
+}
+
+.content-section .price-statistics .statistics-data .all-time-low {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 9px;
+}
+
+.content-section .price-statistics .statistics-data .value-percentile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-section .price-statistics .statistics-data .value-percentile .value {
+  font-size: 16px;
+  margin-bottom: 16px;
+  margin-right: 10px;
+}
+
+.content-section .price-statistics .statistics-data .value-percentile .drop {
+  font-size: 16px;
+  color: #F84960;
+}
+
+.content-section .price-statistics .statistics-data .value-percentile .rise {
+  font-size: 16px;
+  color: #03A66D;
+}
+
+.content-section .price-statistics .statistics-data .total-supply {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 9px;
+}
+
+.content-section .price-statistics .statistics-data .supply-value {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.content-section .price-statistics .statistics-data .max-supply {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 9px;
+}
+
+.content-section .price-statistics .statistics-data .supply-data {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.info-section {
+  margin-top: 53px;
+  padding: 0;
+}
+
+.info-section .text {
+  font-size: 14px;
+  color: #6A6A6A;
+}
+
+.fw-footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 120px;
+  padding: 65px 0 20px 0;
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+}
+
+.fw-footer .bitci-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.fw-footer .bitci-logo svg,
+.fw-footer .bitci-logo img {
+  width: 201px;
+  height: 54.1px;
+  margin-bottom: 10.9px;
+}
+
+.fw-footer .f-info {
+  font-weight: 300;
+  margin-bottom: 18px;
+  text-align: left;
+  color: #000000a6;
+}
+
+.fw-footer address {
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 20.5px;
+  color: #000000a6;
+}
+
+.fw-footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.fw-footer .social a {
+  text-decoration: inherit;
+}
+
+.fw-footer .social a i {
+  color: #000000a6;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.fw-footer .social a i:hover {
+  opacity: 0.5;
+}
+
+.fw-footer .nav-t {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 17px;
+  font-size: 20px;
+}
+
+.fw-footer .row .nav .nav-item .nav-link {
+  padding: 0;
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 14px;
+  color: #6A6A6A;
+}
+
+.fw-footer .row .nav .nav-item .nav-link:hover {
+  color: #252525;
+}
+
+.fw-footer .language .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0 0 0;
+  margin: 30px 0 -20px 0;
+  border-top: 1px solid #F4F4F4;
+}
+
+.fw-footer .language .col-12 .lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fw-footer .language .col-12 .lang img {
+  margin-right: 8px;
+}
+
+.fw-footer .language .col-12 .lang .tr {
+  font-size: 16px;
+  color: #000000;
+  margin-right: 8px;
+}
+
+.fw-footer .language .col-12 .lang .turkce {
+  font-size: 16px;
+  color: #9B9B9B;
+}
+
+.fw-footer .footer-bottom {
+  padding-top: 15px;
+  margin-top: 47.5px;
+  border-top: 1px solid #F4F4F4;
+}
+
+.fw-footer .footer-bottom .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fw-footer .footer-bottom .nav .nav-item {
+  margin-left: 17.5px;
+  margin-right: 17.5px;
+}
+
+.fw-footer .footer-bottom .nav .nav-item.fd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fw-footer .footer-bottom .nav .nav-item.fd .line {
+  margin: 0 10px;
+  color: #0000001c;
+}
+
+@media (max-width: 1200px) {
+  .fw-footer .bitci-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fw-footer .f-info {
+    text-align: center;
+  }
+  .fw-footer address {
+    text-align: center;
+  }
+  .fw-footer .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .fw-footer .footer-top {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=sass.css.map */

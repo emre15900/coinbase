@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 body{
     background: #F9F9F9;
+    font-family: 'Inter', sans-serif;
 }
 
 header{
@@ -244,6 +246,107 @@ header{
             .graphic-screen{
                 img{
                     width: 100%;
+                }
+            }
+        }
+        .analytic-data{
+            margin: 0;
+            padding: 0;
+            .data-analysis{
+                display: flex;
+                justify-content: space-between;
+                background-color: #FFFFFF;
+                margin: 32px 0;
+                padding: 32px;
+                .volume{
+                    display: block;
+                    justify-content: center;
+                    .volume-hour{
+                        .volume-title{
+                            margin-right: 10px;
+                            font-size: 16px;
+                            color: #6A6A6A;
+                        }
+                        .hour{
+                            font-size: 14px;
+                            border-radius: 2px;
+                            background-color: #F2F2F2;
+                            padding: 1px 5px;
+                            color: #BFBFBF;
+                        }
+                    }
+                    .volume-data{
+                        font-size: 20px;
+                        color: #000000;
+                    }
+                }
+                .price-change{
+                    display: block;
+                    justify-content: center;
+                    .volume-hour{
+                        .volume-title{
+                            margin-right: 10px;
+                            font-size: 16px;
+                            color: #6A6A6A;
+                        }
+                        .hour{
+                            font-size: 14px;
+                            border-radius: 2px;
+                            background-color: #F2F2F2;
+                            padding: 1px 5px;
+                            color: #BFBFBF;
+                        }
+                    }
+                    .percentile{
+                        .volume-data{
+                            font-size: 20px;
+                            color: #000000;
+                        }
+                        .drop{
+                            font-size: 16px;
+                            color: #F84960;
+                        }
+                    }
+                }
+                .lowest{
+                    .volume-hour{
+                        .volume-title{
+                            margin-right: 10px;
+                            font-size: 16px;
+                            color: #6A6A6A;
+                        }
+                        .hour{
+                            font-size: 14px;
+                            border-radius: 2px;
+                            background-color: #F2F2F2;
+                            padding: 1px 5px;
+                            color: #BFBFBF;
+                        }
+                    }
+                    .volume-data{
+                        font-size: 20px;
+                        color: #000000;
+                    }
+                }
+                .highest{
+                    .volume-hour{
+                        .volume-title{
+                            margin-right: 10px;
+                            font-size: 16px;
+                            color: #6A6A6A;
+                        }
+                        .hour{
+                            font-size: 14px;
+                            border-radius: 2px;
+                            background-color: #F2F2F2;
+                            padding: 1px 5px;
+                            color: #BFBFBF;
+                        }
+                    }
+                    .volume-data{
+                        font-size: 20px;
+                        color: #000000;
+                    } 
                 }
             }
         }
@@ -543,3 +646,288 @@ header{
         }
     }
 }
+
+.content-section{
+    .message-box{
+        position: relative;
+        .message-shadow{
+           position: absolute;
+           top: 376px;
+           left: 0;
+        }
+    }
+    .read-more{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #EA5607;
+        font-size: 16px;
+        font-weight: medium;
+        &::after{
+            content: "";
+            display: inline-block;
+            border: solid #EA5607;
+            border-width: 0 1.4px 1.4px 0;
+            padding: 2.5px;
+            margin-left: 0.455em;
+            vertical-align: 0.140em;
+            transform: rotate(45deg);
+        }
+        &:hover{
+            &::after{
+                border-color: #EA5607;
+                transform: rotate(225deg);
+                vertical-align: 0.09em;
+            }
+        }
+    }
+    .price-statistics{
+        padding-left: 40px;
+        padding-right: 0;
+        .statistics-data{
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding: 17px 32px;
+            .hood{
+                font-size: 20px;
+                color: #000000;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .tether-title{
+                font-size: 14px;
+                color: #707070;
+                margin-bottom: 9px;
+            }
+            .tether-data{
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+            .market-value{
+                font-size: 14px;
+                color: #707070;
+                margin-bottom: 9px;
+            }
+            .market-data{
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+            .min-max{
+                display: flex;
+                .minimal-maximum{
+                    font-size: 14px;
+                    color: #707070;
+                    margin-bottom: 9px;
+                    margin-right: 50px;
+                }
+                .days{
+                    color: #B1B1B1;
+                    font-size: 12px;
+                    padding: 1px 13px 3px 13px;
+                    background: #F2F2F2;
+                    border-radius: 2px;
+                    max-height: 23px;
+                }
+            }
+            .min-max-value{
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+            .all-time-hight{
+                font-size: 14px;
+                color: #707070;
+                margin-bottom: 9px;
+            }
+            .all-time-low{
+                font-size: 14px;
+                color: #707070;
+                margin-bottom: 9px;
+            }
+            .value-percentile{
+                display: flex;
+                .value{
+                    font-size: 16px;
+                    margin-bottom: 16px; 
+                    margin-right: 10px;
+                }
+                .drop{
+                    font-size: 16px;
+                    color: #F84960;
+                }
+                .rise{
+                    font-size: 16px;
+                    color: #03A66D;
+                }
+            }
+            .total-supply{
+                font-size: 14px;
+                color: #707070;
+                margin-bottom: 9px;
+            }
+            .supply-value{
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+            .max-supply{
+                font-size: 14px;
+                color: #707070;
+                margin-bottom: 9px;
+            }
+            .supply-data{
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.info-section{
+    margin-top: 53px;
+    padding: 0;
+    .text{
+        font-size: 14px;
+        color: #6A6A6A;
+    }
+}
+
+.fw-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    padding: 65px 0 20px 0;
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    .bitci-logo {
+      display: flex;
+      justify-content: flex-start;
+      svg,
+      img {
+        width: 201px;
+        height: 54.1px;
+        margin-bottom: 10.9px;
+      }
+    }
+    .f-info {
+      font-weight: 300;
+      margin-bottom: 18px;
+      text-align: left;
+      color: #000000a6;
+    }
+    address {
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 20.5px;
+      color: #000000a6;
+    }
+    .social {
+      display: flex;
+      justify-content: flex-start;
+      a {
+        text-decoration: inherit;
+        i {
+          color: #000000a6;
+          font-size: 22px;
+          margin-right: 20px;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+    .nav-t {
+      color: #000000;
+      font-weight: bold;
+      margin-bottom: 17px;
+      font-size: 20px;
+    }
+    .row {
+      .nav {
+        .nav-item {
+          .nav-link {
+            padding: 0;
+            font-weight: 400;
+            line-height: 35px;
+            font-size: 14px;
+            color: #6A6A6A;
+            &:hover {
+              color: rgb(37, 37, 37);
+            }
+          }
+        }
+      }
+    }
+    .language{
+        .col-12{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0 0 0;
+            margin: 30px 0 -20px 0;
+            border-top: 1px solid #F4F4F4;
+             .lang{
+            display: flex;
+            img{
+                margin-right: 8px;
+            }
+            .tr{
+              font-size: 16px;
+              color: #000000;
+              margin-right: 8px;
+            }
+            .turkce{
+              font-size: 16px;
+              color: #9B9B9B;  
+            }
+            }
+        }
+    }
+
+    .footer-bottom {
+      padding-top: 15px;
+      margin-top: 47.5px;
+      border-top: 1px solid #F4F4F4;
+      .nav {
+        justify-content: center;
+        .nav-item {
+          margin-left: 17.5px;
+          margin-right: 17.5px;
+          &.fd {
+            display: flex;
+            align-items: center;
+            .line {
+              margin: 0 10px;
+              color: #0000001c;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .fw-footer {
+      .bitci-logo {
+        justify-content: center;
+      }
+      .f-info {
+        text-align: center;
+      }
+      address {
+        text-align: center;
+      }
+      .social {
+        justify-content: center;
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .fw-footer {
+      .footer-top {
+        text-align: center;
+      }
+    }
+  }
