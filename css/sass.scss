@@ -7,6 +7,9 @@ body{
 header{
     background: #FFFFFF;
     box-shadow: 0 6px 12px #DDDDDD;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -130,6 +133,7 @@ header{
     .container{
         background: #FFFFFF;
         padding: 40px 32px;
+        margin-top: 80px;
         .no-support{
             display: flex;
             justify-content: space-between;
@@ -216,7 +220,7 @@ header{
                     font-size: 16px;
                     color: #03A66D;
                     .percentile{
-                        padding-left: 120px;
+                        padding-left: 140px;
                     }
                 }
                 .times{
@@ -652,8 +656,8 @@ header{
         position: relative;
         .message-shadow{
            position: absolute;
-           top: 376px;
            left: 0;
+           bottom: 0;
         }
     }
     .read-more{

@@ -8,6 +8,9 @@ header {
   background: #FFFFFF;
   -webkit-box-shadow: 0 6px 12px #DDDDDD;
           box-shadow: 0 6px 12px #DDDDDD;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 header .navbar {
@@ -181,6 +184,7 @@ header .navbar .right-header ul .list .bell::before {
 .support-section .container {
   background: #FFFFFF;
   padding: 40px 32px;
+  margin-top: 80px;
 }
 
 .support-section .container .no-support {
@@ -312,7 +316,7 @@ header .navbar .right-header ul .list .bell::before {
 }
 
 .graphic-section .left-bar .graphic-table .data .rise .percentile {
-  padding-left: 120px;
+  padding-left: 140px;
 }
 
 .graphic-section .left-bar .graphic-table .data .times {
