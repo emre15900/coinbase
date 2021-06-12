@@ -34,6 +34,24 @@
                 </ul>
               </div>
             </div>
+            <div class="mobile-menu">
+              <div class="hamburger-menu">
+
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                  <span></span>
+                </label>
+
+                <ul class="menu__box">
+                  <li class="logo"><a href="#"><img src="images/bitci-logo.svg" alt=""></a></li>
+                  <li><a class="menu-item" href="javascript:void(0)">Borsa</a></li>
+                  <li><a class="menu-item" href="javascript:void(0)">Ürünler</a></li>
+                  <li><a class="menu-item" href="javascript:void(0)">Şirket</a></li>
+                  <li><a class="menu-item" href="javascript:void(0)">Destek</a></li>
+                </ul>
+
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -42,22 +60,28 @@
         <div class="container">
           <div class="row">
             <div class="no-support">
-              <div class="left-section">
-                <div class="tether-image">
-                  <img src="images/tether.svg" alt="">
+              <div class="row">
+                <div class="col-12 col-lg-6 bar-colon">
+                  <div class="left-section">
+                    <div class="tether-image">
+                      <img src="images/tether.svg" alt="">
+                    </div>
+                    <div class="tether">
+                      <span class="tether-title">TETHER</span>
+                      <span class="usdt">USDT</span>
+                    </div>
+                    <div class="info-message">
+                      <img src="images/info.svg" alt="">
+                      <span class="info-text">Tether Bitci.com tarafından desteklenmiyor.</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="tether">
-                  <span class="tether-title">TETHER</span>
-                  <span class="usdt">USDT</span>
+                <div class="col-12 col-lg-6 bar-colon">
+                  <div class="right-section">
+                    <a href="#"><button class="share">Paylaş</button></a>
+                    <a href="#"><button class="watch-list">İzleme listesine ekle</button></a>
+                  </div>
                 </div>
-                <div class="info-message">
-                  <img src="images/info.svg" alt="">
-                  <span class="info-text">Tether Bitci.com tarafından desteklenmiyor.</span>
-                </div>
-              </div>
-              <div class="right-section">
-                <a href="#"><button class="share">Paylaş</button></a>
-                <a href="#"><button class="watch-list">İzleme listesine ekle</button></a>
               </div>
             </div>
           </div>
@@ -67,7 +91,7 @@
       <section class="graphic-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-xs-12 left-bar">
+            <div class="col-12 col-lg-8 left-bar">
               <div class="row">
                 <div class="col-md-12 graphic-table">
                   <div class="data">
@@ -81,6 +105,16 @@
                       <span>1 AY</span>
                       <span>1 YIL</span>
                       <span>TÜMÜ</span>
+                    </div>
+                    <div class="select-btn">
+                      <select class="form-select">
+                        <option value="1">1 SAAT</option>
+                        <option value="2" class="active" selected>24 SAAT</option>
+                        <option value="3">1 HAFTA</option>
+                        <option value="4">1 AY</option>
+                        <option value="5">1 YIL</option>
+                        <option value="6">TÜMÜ</option>
+                      </select>
                     </div>
                   </div>
                   <div class="price">
@@ -127,7 +161,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-xs-12 right-bar">
+            <div class="col-12 col-lg-4 right-bar">
               <div class="content">
                 <div class="search">
                   <input type="text" class="search-button" placeholder="Varlık ara...">
@@ -235,7 +269,7 @@
       <section class="content-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-12 col-lg-8">
               <div class="message-box">
                 <p class="text">
                   Bitcicoin bugünkü fiyatı ₺0.406208 TRY, 24 saatlik işlem hacmi ₺19,916,848 TRY. Bitcicoin son 24 saatte yüzde düştü. Anlık CoinMarketCap sıralaması #2708, piyasa değeri mevcut değil. Dolaşımdaki arz verisi mevcut değil ve maksimum seviyede. 100,000,000,000 BITCI coin.
@@ -295,9 +329,9 @@
                   BITCI Explorer (https://bitciexp.bitcichain.com)
                 </p>
               </div>
-              <span class="read-more">Devamını Oku</span>
+              <span class="read-more" on="Devamını Oku" off="Daralt"></span>
             </div>
-            <div class="col-md-4 price-statistics">
+            <div class="col-12 col-lg-4 price-statistics">
               <div class="statistics-data">
                 <h1 class="hood">USDT Fiyat İstatistikleri</h1>
                 <span class="tether-title">Tether Değeri</span>
