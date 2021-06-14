@@ -1242,33 +1242,33 @@ header .navbar .right-header ul .list .bell::before {
 }
 
 /* Responsive */
-#menu-toggle {
+.mobile-menu #menu-toggle {
   opacity: 0;
 }
 
-#menu-toggle:checked ~ .menu-btn > span {
+.mobile-menu #menu-toggle:checked ~ .menu-btn > span {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-#menu-toggle:checked ~ .menu-btn > span::before {
+.mobile-menu #menu-toggle:checked ~ .menu-btn > span::before {
   top: 0;
   -webkit-transform: rotate(0);
           transform: rotate(0);
 }
 
-#menu-toggle:checked ~ .menu-btn > span::after {
+.mobile-menu #menu-toggle:checked ~ .menu-btn > span::after {
   top: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-#menu-toggle:checked ~ .menu__box {
+.mobile-menu #menu-toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
 }
 
-.menu-btn {
+.mobile-menu .menu-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1284,7 +1284,7 @@ header .navbar .right-header ul .list .bell::before {
   z-index: 1;
 }
 
-.menu-btn > span {
+.mobile-menu .menu-btn > span {
   display: block;
   position: absolute;
   width: 100%;
@@ -1294,7 +1294,7 @@ header .navbar .right-header ul .list .bell::before {
           transition-duration: .25s;
 }
 
-.menu-btn > span::before {
+.mobile-menu .menu-btn > span::before {
   display: block;
   position: absolute;
   width: 100%;
@@ -1306,7 +1306,7 @@ header .navbar .right-header ul .list .bell::before {
   top: -8px;
 }
 
-.menu-btn > span::after {
+.mobile-menu .menu-btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -1318,7 +1318,7 @@ header .navbar .right-header ul .list .bell::before {
   top: 8px;
 }
 
-.menu__box {
+.mobile-menu .menu__box {
   display: block;
   position: fixed;
   visibility: hidden;
@@ -1336,13 +1336,13 @@ header .navbar .right-header ul .list .bell::before {
           transition-duration: .25s;
 }
 
-.menu__box .logo {
+.mobile-menu .menu__box .logo {
   position: absolute;
   top: 24px;
   left: 20px;
 }
 
-.menu-item {
+.mobile-menu .menu-item {
   display: block;
   padding: 12px 24px;
   color: #333;
@@ -1354,7 +1354,7 @@ header .navbar .right-header ul .list .bell::before {
           transition-duration: .25s;
 }
 
-.menu-item:hover {
+.mobile-menu .menu-item:hover {
   background-color: #EA5607;
   color: #fff;
 }
