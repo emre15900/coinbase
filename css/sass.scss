@@ -224,6 +224,13 @@ header{
                         padding-left: 140px;
                     }
                 }
+                .rise-mobile{
+                    font-size: 16px;
+                    color: #03A66D;
+                    .percentile{
+                        padding-left: 140px;
+                    }
+                }
                 .times{
                     font-size: 12px;
                     color: #CBCBCB;
@@ -1095,31 +1102,6 @@ header{
         .data{
             display: flex;
             justify-content: space-between !important;
-            .times{
-                display: none;
-            }
-            .select-btn{
-                .form-select{
-                    option {
-                        &:not(:checked) {
-                            background-color: #fff;
-                        }
-                        &:checked{
-                            background-color: #EA5607;
-                            color: #FFFFFF;
-                        }
-                        &:hover{
-                            background-color: #EA5607;
-                            color: #FFFFFF;
-                        }
-                    }
-                    &:focus{
-                        border: 1px solid #ced4da;
-                        outline: 0;
-                        box-shadow: none;
-                    }
-                }
-            } 
         }
     }
     .content-section{
@@ -1166,7 +1148,31 @@ header{
         content: attr(off)
     }
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 768px){
+    .graphic-section{
+        .left-bar{
+            .graphic-table{
+                .percentile{
+                    padding-left: 0 !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 460px){
+    .graphic-section{
+        .left-bar{
+            .graphic-table{
+                .data{
+                    .rise-mobile{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 460px){
     .watch-list{
         padding: 8px 12px !important;
         font-size: 15px;
@@ -1178,8 +1184,19 @@ header{
     .graphic-section{
         .left-bar{
             .graphic-table{
-                .percentile{
-                    padding-left: 0 !important;
+                .data{
+                    display: block;
+                    .times{
+                        margin: 10px 0;
+                    }
+                    .rise{
+                        display: none;
+                    }
+                    .rise-mobile{
+                        .percentile{
+                            padding-left: 140px !important;
+                        }
+                    }
                 }
             }
         }

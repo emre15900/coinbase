@@ -312,6 +312,15 @@ header .navbar .right-header ul .list .bell::before {
   padding-left: 140px;
 }
 
+.graphic-section .left-bar .graphic-table .data .rise-mobile {
+  font-size: 16px;
+  color: #03A66D;
+}
+
+.graphic-section .left-bar .graphic-table .data .rise-mobile .percentile {
+  padding-left: 140px;
+}
+
 .graphic-section .left-bar .graphic-table .data .times {
   font-size: 12px;
   color: #CBCBCB;
@@ -1403,26 +1412,6 @@ header .navbar .right-header ul .list .bell::before {
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
   }
-  .graphic-section .data .times {
-    display: none;
-  }
-  .graphic-section .data .select-btn .form-select option:not(:checked) {
-    background-color: #fff;
-  }
-  .graphic-section .data .select-btn .form-select option:checked {
-    background-color: #EA5607;
-    color: #FFFFFF;
-  }
-  .graphic-section .data .select-btn .form-select option:hover {
-    background-color: #EA5607;
-    color: #FFFFFF;
-  }
-  .graphic-section .data .select-btn .form-select:focus {
-    border: 1px solid #ced4da;
-    outline: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
   .content-section .price-statistics {
     padding: 0 !important;
     margin-top: 40px;
@@ -1459,7 +1448,19 @@ header .navbar .right-header ul .list .bell::before {
   content: attr(off);
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
+  .graphic-section .left-bar .graphic-table .percentile {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  .graphic-section .left-bar .graphic-table .data .rise-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
   .watch-list {
     padding: 8px 12px !important;
     font-size: 15px;
@@ -1468,8 +1469,17 @@ header .navbar .right-header ul .list .bell::before {
     padding: 8px 20px !important;
     font-size: 15px;
   }
-  .graphic-section .left-bar .graphic-table .percentile {
-    padding-left: 0 !important;
+  .graphic-section .left-bar .graphic-table .data {
+    display: block;
+  }
+  .graphic-section .left-bar .graphic-table .data .times {
+    margin: 10px 0;
+  }
+  .graphic-section .left-bar .graphic-table .data .rise {
+    display: none;
+  }
+  .graphic-section .left-bar .graphic-table .data .rise-mobile .percentile {
+    padding-left: 140px !important;
   }
   .support-section .no-support .left-section .tether {
     margin-right: 0 !important;
