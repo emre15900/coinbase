@@ -99,21 +99,21 @@
                       <span class="percentile">-0,85%</span>
                     </div>
                     <div class="times">
-                      <span>1 SAAT</span>
-                      <span class="active">24 SAAT</span>
-                      <span>1 HAFTA</span>
-                      <span>1 AY</span>
-                      <span>1 YIL</span>
-                      <span>TÜMÜ</span>
+                      <span class="time-value" data-filter='one-hour'>1 SAAT</span>
+                      <span class="time-value active" data-filter='twenty-four-hour'>24 SAAT</span>
+                      <span class="time-value" data-filter='one-week'>1 HAFTA</span>
+                      <span class="time-value" data-filter='one-month'>1 AY</span>
+                      <span class="time-value" data-filter='one-year'>1 YIL</span>
+                      <span class="time-value" data-filter='all-time'>TÜMÜ</span>
                     </div>
                     <div class="select-btn">
                       <select class="form-select">
-                        <option value="1">1 SAAT</option>
-                        <option value="2" class="active" selected>24 SAAT</option>
-                        <option value="3">1 HAFTA</option>
-                        <option value="4">1 AY</option>
-                        <option value="5">1 YIL</option>
-                        <option value="6">TÜMÜ</option>
+                        <option class="time-value" data-filter='one-hour' value="1">1 SAAT</option>
+                        <option class="time-value active" data-filter='twenty-four-hour' value="2" class="active" selected>24 SAAT</option>
+                        <option class="time-value" data-filter='one-week' value="3">1 HAFTA</option>
+                        <option class="time-value" data-filter='one-month' value="4">1 AY</option>
+                        <option class="time-value" data-filter='one-year' value="5">1 YIL</option>
+                        <option class="time-value" data-filter='all-time' value="6">TÜMÜ</option>
                       </select>
                     </div>
                   </div>
@@ -121,7 +121,12 @@
                     <span>8,60 TRY</span>
                   </div>
                   <div class="graphic-screen">
-                    <img src="images/graphic.svg" alt="">
+                    <img src="images/graphic.svg" alt="" class="graphic-item one-hour">
+                    <img src="images/graphic.svg" alt="" class="graphic-item twenty-four-hour">
+                    <img src="images/graphic.svg" alt="" class="graphic-item one-week">
+                    <img src="images/graphic.svg" alt="" class="graphic-item one-month">
+                    <img src="images/graphic.svg" alt="" class="graphic-item one-year">
+                    <img src="images/graphic.svg" alt="" class="graphic-item all-time">
                   </div>
                 </div>
                 <div class="col-md-12 analytic-data">
@@ -168,7 +173,7 @@
                   <img src="images/search.svg" alt="">
                 </div>
                 <div class="coin-list">
-                  <div class="ripple">
+                  <div class="coin-item ripple">
                     <div class="ripple-detail">
                       <img src="images/ripple.svg" alt="">
                       <div class="ripple-title">
@@ -181,7 +186,7 @@
                       <span class="drop">-0,85%</span>
                     </div>
                   </div>
-                  <div class="bittorrent">
+                  <div class="coin-item bittorrent">
                     <div class="bittorrent-detail">
                       <img src="images/bittorrent.svg" alt="">
                       <div class="bittorrent-title">
@@ -194,7 +199,7 @@
                       <span class="drop">-0,85%</span>
                     </div>
                   </div>
-                  <div class="bitcoin-cash">
+                  <div class="coin-item bitcoin-cash">
                     <div class="bitcoin-cash-detail">
                       <img src="images/bitcoin-cash.svg" alt="">
                       <div class="bitcoin-cash-title">
@@ -207,7 +212,7 @@
                       <span class="drop">-0,85%</span>
                     </div>
                   </div>
-                  <div class="ethereum">
+                  <div class="coin-item ethereum">
                     <div class="ethereum-detail">
                       <img src="images/ethereum.svg" alt="">
                       <div class="ethereum-title">
@@ -220,7 +225,7 @@
                       <span class="drop">-3,47%</span>
                     </div>
                   </div>
-                  <div class="digibyte">
+                  <div class="coin-item digibyte">
                     <div class="digibyte-detail">
                       <img src="images/digibyte.svg" alt="">
                       <div class="digibyte-title">
@@ -233,7 +238,7 @@
                       <span class="rise">0,07%</span>
                     </div>
                   </div>
-                  <div class="holo">
+                  <div class="coin-item holo">
                     <div class="holo-detail">
                       <img src="images/holo.svg" alt="">
                       <div class="holo-title">
@@ -246,7 +251,7 @@
                       <span class="rise">4,25%</span>
                     </div>
                   </div>
-                  <div class="litecoin">
+                  <div class="coin-item litecoin">
                     <div class="litecoin-detail">
                       <img src="images/litecoin.svg" alt="">
                       <div class="litecoin-title">

@@ -228,6 +228,9 @@ header{
                     font-size: 12px;
                     color: #CBCBCB;
                     margin-left: auto;
+                    .time-value{
+                        cursor: pointer;
+                    }
                     span{
                         margin-right: 16px;
                         &:last-child{

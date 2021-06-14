@@ -318,6 +318,10 @@ header .navbar .right-header ul .list .bell::before {
   margin-left: auto;
 }
 
+.graphic-section .left-bar .graphic-table .data .times .time-value {
+  cursor: pointer;
+}
+
 .graphic-section .left-bar .graphic-table .data .times span {
   margin-right: 16px;
 }
